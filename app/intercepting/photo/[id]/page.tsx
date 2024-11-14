@@ -1,11 +1,13 @@
+import { use } from "react";
 import { photos } from "../../data";
 import Image from "next/image";
 
 export default function PhotoPage({
-  params: { id },
+  params,
 }: {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }) {
+  const { id } = use(params);
   const photo = photos.find((p) => p.id === id);
   return (
     <Image

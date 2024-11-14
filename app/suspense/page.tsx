@@ -1,5 +1,6 @@
 import { Suspense } from "react";
 
+console.log("Suspense Server");
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 const PostFeed = async () => {
@@ -16,7 +17,9 @@ const Recommend = async () => {
   await sleep(5000);
   return <div>Recommend</div>;
 };
+
 export default function Page() {
+  console.log("Suspense page");
   return (
     <section>
       <Suspense fallback={<p>Loading PostFeed Component ...</p>}>

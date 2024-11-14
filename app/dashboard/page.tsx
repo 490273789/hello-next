@@ -1,3 +1,5 @@
+"use client";
+import React from "react";
 // import { use } from "react";
 
 // async function getData() {
@@ -11,10 +13,8 @@
 //   const { message } = use(getData());
 //   return <h1>{message}</h1>;
 // }
-"use client";
-// dashboard/page.js
-import React from "react";
 
+console.log("Dashboard Client");
 export default function Page() {
   const [error, setError] = React.useState(false);
 
