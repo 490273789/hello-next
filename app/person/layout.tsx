@@ -13,10 +13,10 @@ export default function Layout({
   analytics: ReactNode;
 }) {
   return (
-    <div className="border-2 border-blue-600 p-4">
+    <div className="border-2 border-primary p-4">
       <h1 className="font-bold mb-2">Person Layout</h1>
-      <nav className="flex gap-4 p-2 bg-slate-300 rounded-md mb-4">
-        <Link className="text-blue-600 underline" href="/person/page-views">
+      <nav className="flex gap-4 p-2 bg-primary rounded-md mb-4">
+        <Link className="text-bg-primary underline" href="/person/page-views">
           Page Views
         </Link>
         <Link className="text-blue-600 underline" href="/person/visitors">

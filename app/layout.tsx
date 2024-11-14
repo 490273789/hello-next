@@ -51,7 +51,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       >
         <div className="p-8 h-[100vh] flex flex-col items-center">
           <h1 className="font-bold mb-4">Root Layout</h1>
-          <nav className="flex gap-4 p-4 bg-slate-300 text-blue-600 w-[100%] rounded-md">
+          <nav className="flex gap-4 p-4 bg-primary text-blue-600 w-[100%] rounded-md">
             <Link className="underline" href="/">
               Home
             </Link>
@@ -66,6 +66,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             </Link>
             <Link className="underline" href="/intercepting">
               Intercepting
+            </Link>
+            <Link className="underline" href="/suspense">
+              Suspense
             </Link>
           </nav>
           <div className="flex-1 w-[900px] overflow-auto">{children}</div>
