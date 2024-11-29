@@ -72,8 +72,16 @@ export default function RootLayout({
             <Link className="underline" href="/suspense">
               Suspense
             </Link>
+            <Link className="underline" href="/todos">
+              ToDo
+            </Link>
+            <Link className="underline" href="/actions-use">
+              Actions
+            </Link>
           </nav>
-          <div className="flex-1 w-[900px] overflow-auto">{children}</div>
+          <div className="flex-1 w-[900px] overflow-auto bg-bg-primary">
+            {children}
+          </div>
         </div>
       </body>
     </html>
